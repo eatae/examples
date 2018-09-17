@@ -2,6 +2,6 @@
 
 
 [atlanta_messages](https://github.com/eatae/examples/tree/master/atlanta_messages)
-    Проект getminer.<br>
-    Обмен сообщениями между пользователями.<br>
+    _Проект getminer.<br>_
+    _Обмен сообщениями между пользователями.<br>_
     Реализация ORM для класса.
