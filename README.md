@@ -7,7 +7,6 @@
     atlanta_messages
   </a>
   <div>
-    <font size="5" color="red" face="Arial">П</font>
       Проект getminer.<br>
       Обмен сообщениями между пользователями.<br>
       Реализация ORM для класса.
