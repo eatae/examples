@@ -8,7 +8,7 @@
 > Обмен сообщениями между пользователями.<br>
 > Реализация ORM для класса Message
 
-
+ |
 ----------------|----------------------
 [create_table.sql](https://github.com/eatae/examples/blob/master/atlanta_messages/create_table.sql)| Создание таблицы
 [message.php](https://github.com/eatae/examples/blob/master/atlanta_messages/message.php)| class message - простая реализация ORM для класса
