@@ -17,7 +17,7 @@
 > JS - используем jQuery validation.<br>
 > controller - для общего понятия, что происходит.<br>
 > Интересно - TranslateProtocol - там проверяем и заполняем все данные приходящие по AJAX последовательно.<br>
-> Так же метод модели Translate::getTranslate() - который состовляет запрос.<br>
+> Пример ActiveQuery - последовательного составление запроса по условиям(можно делать фильтры) Translate::getTranslate().<br>
 > TranslateException extends ExitException - пользовательский Exception в Yii. Теперь не нужно писать try{} в контроллерах.<br>
 
 
