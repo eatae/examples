@@ -2,7 +2,7 @@
     Examples used in the work
 
 
-#### atlanta_messages
+### [atlanta_message](https://github.com/eatae/examples/blob/master/atlanta_messages)<br>
 
 > Проект getminer<br>
 > Обмен сообщениями между пользователями    ([create_table.sql](https://github.com/eatae/examples/blob/master/atlanta_messages/create_table.sql))<br>
