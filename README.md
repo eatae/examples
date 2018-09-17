@@ -6,7 +6,7 @@
 
 > Проект getminer<br>
 > Обмен сообщениями между пользователями    ([create_table.sql](https://github.com/eatae/examples/blob/master/atlanta_messages/create_table.sql))<br>
-> Реализация ORM для класса Message
+> Пример реализации ORM для класса ([message.php](https://github.com/eatae/examples/blob/master/atlanta_messages/message.php))<br>
 
 
 
