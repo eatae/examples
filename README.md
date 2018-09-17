@@ -2,6 +2,6 @@
 Examples used in the work.
 
 <b>atlanta_messages:</b>
-  Проект getminer.
+  <p>Проект getminer.</p>
   Обмен сообщениями между пользователями.
   Реализация ORM для класса.
