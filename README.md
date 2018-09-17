@@ -1,15 +1,12 @@
 # examples
 Examples used in the work.
 <hr>
-<style>
-  
-</style>
 
 <p>
   <a href='https://github.com/eatae/examples/tree/master/atlanta_messages'>
     atlanta_messages
   </a>
-  <div>
+  <div style='color: red;'>
       Проект getminer.<br>
       Обмен сообщениями между пользователями.<br>
       Реализация ORM для класса.
