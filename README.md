@@ -1,14 +1,8 @@
 # examples
-    Examples used in the work.
+# Examples used in the work.
 ---
 
-<p>
-  <a href='https://github.com/eatae/examples/tree/master/atlanta_messages'>
-    atlanta_messages
-  </a>
-  <div>
-      Проект getminer.<br>
-      Обмен сообщениями между пользователями.<br>
-      Реализация ORM для класса.
-  </div>
-</p>
+[atlanta_messages](https://github.com/eatae/examples/tree/master/atlanta_messages)
+    Проект getminer.<br>
+    Обмен сообщениями между пользователями.<br>
+    Реализация ORM для класса.
