@@ -1,6 +1,6 @@
 # examples
-Examples used in the work.
-<hr>
+    Examples used in the work.
+---
 
 <p>
   <a href='https://github.com/eatae/examples/tree/master/atlanta_messages'>
