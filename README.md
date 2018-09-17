@@ -3,7 +3,7 @@
 
 
 [atlanta_messages](https://github.com/eatae/examples/tree/master/atlanta_messages)<br>
-Проект getminer
+> Проект getminer
 > Обмен сообщениями между пользователями    ([create_table.sql](https://github.com/eatae/examples/blob/master/atlanta_messages/create_table.sql))<br>
 > Реализация ORM для класса Message
 
