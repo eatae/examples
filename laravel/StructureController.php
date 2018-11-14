@@ -39,10 +39,10 @@ class StructureController extends Controller
                 'department_id' => 'required|integer',
             ]);
 
-            $structure = Structure::getByFields($request);
+            $structures = Structure::getByMembers($request->post('company_id'), $request->post('office_id'), $request->post('department_id'));
 
             /* if structure exists */
-            if ( !$structure->isEmpty() ) {
+            if ( !$structures->isEmpty() ) {
                 return redirect()->back()->withErrors('This structure already exists.')->withInput();
             }
 
@@ -78,10 +78,10 @@ class StructureController extends Controller
                 'department_id' => 'required|integer',
             ]);
 
-            $structure = Structure::getByFields($request);
+            $structures = Structure::getByMembers($request->post('company_id'), $request->post('office_id'), $request->post('department_id'));
 
             /* if structure exists */
-            if ( !$structure->isEmpty() ) {
+            if ( !$structures->isEmpty() ) {
                 return redirect()->back()->withErrors('This structure already exists.')->withInput();
             }
 
