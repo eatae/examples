@@ -2,7 +2,6 @@
 
 namespace App\Classes\Helpers;
 
-// Models
 use App\Models\HumanResource\Poll;
 use App\Models\HumanResource\PollAnswer;
 use App\Models\HumanResource\Award;
@@ -132,14 +131,15 @@ class CustomHelper
     {
         $result = [];
         foreach ($params as $key => $val) {
-            $bind_name = $name .'_'. $key;
-            $result['keys'][] = ':'. $bind_name;
+            $bind_name = $name . '_' . $key;
+            $result['keys'][] = ':' . $bind_name;
             $result['binds'][$bind_name] = $val;
         }
         $result['keys'] = implode(', ', $result['keys']);
 
         return $result;
     }
+
 
 
 
@@ -150,11 +150,23 @@ class CustomHelper
      * @param int $share
      * @return float|int
      */
-    public static function percent(int $full, int $share) {
+    public static function percent(int $full, int $share)
+    {
         if (!$full || !$share) {
             return 0;
         }
         return abs(($share / $full) * 100);
+    }
+
+    /**
+     * User has role or no
+     */
+    public static function actionUserCanPermission($permission)
+    {
+        if (Auth::check()) {
+            $user = User::find(Auth::id());
+            return $user->can($permission);
+        } else return false;
     }
 
 
@@ -217,18 +229,6 @@ class CustomHelper
         ];
     }
 
-
-
-    /**
-      * User has role or no
-      */
-    public static function actionUserCanPermission($permission)
-    {
-        if (Auth::check()) {
-            $user = User::find(Auth::id());
-            return $user->can($permission);
-        } else return false;
-    }
 
 
 
