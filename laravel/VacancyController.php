@@ -121,7 +121,7 @@ class VacancyController extends Controller
             }
             /* fill vacancy */
             $vacancy = new Vacancy($request->all());
-            $vacancy->status = Vacancy::EMPTY_STATUS;
+            $vacancy->status = Vacancy::STATUS_EMPTY;
             $vacancy->structure_id = $structure->id;
             $vacancy->fillComment('create', $request->post('comment') ); // add comment
             /* save vacancy */
@@ -152,7 +152,7 @@ class VacancyController extends Controller
     public function actionEdit(Request $request, Vacancy $vacancy)
     {
         $priorities = Vacancy::PRIORITY_VALUES;
-        $statuses = [Vacancy::OPEN_STATUS, Vacancy::CANDIDATE_EXISTS_STATUS, Vacancy::CLOSE_STATUS];
+        $statuses = [Vacancy::STATUS_OPEN, Vacancy::STATUS_CLOSE_CANDIDATE_FOUND, Vacancy::STATUS_CLOSE];
 
         return view('vacancy.edit', compact('vacancy', 'priorities', 'statuses'));
     }
